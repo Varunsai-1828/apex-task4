@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task 4 Project</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Passionate web developer skilled in HTML, CSS, and JavaScript.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <div id="todo-app" class="todo">
+        <h3>To-Do List</h3>
+        <input type="text" id="new-task" placeholder="New task" aria-label="New task" />
+        <button id="addTask">Add Task</button>
+        <ul id="task-list"></ul>
+      </div>
+
+      <div id="product-list" class="products">
+        <h3>Product Listings</h3>
+
+        <label for="filter">Category:</label>
+        <select id="filter">
+          <option value="all">All</option>
+          <option value="electronics">Electronics</option>
+          <option value="books">Books</option>
+        </select>
+
+        <label for="sort">Sort by:</label>
+        <select id="sort">
+          <option value="price">Price</option>
+          <option value="rating">Rating</option>
+        </select>
+
+        <div id="products"></div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:example@email.com">example@email.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Portfolio</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
